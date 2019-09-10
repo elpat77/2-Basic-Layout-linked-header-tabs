@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    font-family: Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
 
 }
 
@@ -13,8 +14,9 @@ header {
 h3 {
     color:white;
     display: table-cell;
-    vertical-align: middle;
     padding-left: 80px;
+    text-shadow: 2px 2px 2px rgba(31, 40, 54, 0.342); 
+    vertical-align: middle;
 }
 
 nav {
@@ -22,8 +24,6 @@ nav {
     float: right;
     height: 10vh;
     margin-right: 80px;
-
-
 }
 
 a {
@@ -31,19 +31,41 @@ a {
     vertical-align: middle;
     text-decoration: none;
     color: white;
+    text-shadow: 2px 2px 2px rgba(31, 40, 54, 0.342); 
+    transition: all 0.2s ease-in;
 }
 
-a:not(:Last-child) {
-    padding-right: 20opx;
+a:not(:last-child) {
+    padding-right: 20px;
+}
+
+a:hover { 
+    color: rgb(127, 255, 212);
+    text-shadow: 5px 5px 2px rgba(31, 40, 54, 0.342); 
+    transform: translate(-1px, -3px);
 }
 
 main {
-    height: 80vh;
+    min-height: 80vh;
     background-color: #ecf0f1;
+    position: relative;
+}
+
+.box1 {
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #2980b9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgb(77, 75, 75);
 }
 
 footer {
     height: 10vh;
-    background-color: #34495e
+    background-color: #34495e;
+
 }
 
